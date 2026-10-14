@@ -61,7 +61,7 @@ const stages = [
     body:'The final lock has no key in the visible transcript. The record is stored twice, once in the page itself. Find the hexadecimal file ID in the HTML source and translate it into text. Enter the file name without the hyphen.',
     puzzle:'SOURCE REQUIRED · FILE INDEX ENCRYPTED AS HEX',
     question:'What is the file ID?', answer:'ARCHIVE07',
-  }
+  },
 ];
 function normalize(s){return s.toUpperCase().replace(/[^A-Z0-9]/g,'')}
 function progress(){return `<div class="progress" aria-label="Puzzle progress">${stages.map((_,i)=>`<span class="dot ${i<stage?'done':''}"></span>`).join('')}</div>`}
